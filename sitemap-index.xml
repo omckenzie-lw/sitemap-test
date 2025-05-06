@@ -7,4 +7,8 @@
         <loc>https://omckenzie-lw.github.io/sitemap-test/sitemap-2.xml</loc>
         <!-- <lastmod>2024-05-04</lastmod> -->
     </sitemap>
+    <sitemap>
+        <loc>https://omckenzie-lw.github.io/sitemap-test/sitemap-3.xml</loc>
+        <lastmod>2024-01-15</lastmod>
+    </sitemap>
 </sitemapindex>
