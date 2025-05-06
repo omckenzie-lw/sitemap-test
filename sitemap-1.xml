@@ -3,10 +3,10 @@
                         http://www.google.com/schemas/sitemap-video/1.1 http://www.google.com/schemas/sitemap-video/1.1/sitemap-video.xsd">
 
     <url>
+        <loc>https://omckenzie-lw.github.io/bikes/mountain-bikes</loc>
         <lastmod>2023-05-02</lastmod>
-        <loc>bikes/mountain-bikes</loc>
-        <xhtml:link rel="alternate" hreflang="de" href="/de/bikes/folding-bikes.html" />
-        <xhtml:link rel="alternate" hreflang="en" href="/en/bikes/folding-bikes.html" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://xxx-lw.github.io/de/bikes/mountain-bikes.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://xxx-lw.github.io/en/bikes/mountain-bikes.html" />
     </url>
 
 </urlset>

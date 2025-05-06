@@ -3,17 +3,17 @@
                         http://www.google.com/schemas/sitemap-video/1.1 http://www.google.com/schemas/sitemap-video/1.1/sitemap-video.xsd">
 
     <url>
+        <loc>https://omckenzie-lw.github.io/bikes/hybrid-bikes</loc>
         <lastmod>2024-05-02</lastmod>
-        <loc>bikes/hybrid-bikes</loc>
-        <xhtml:link rel="alternate" hreflang="de" href="/de/bikes/folding-bikes.html" />
-        <xhtml:link rel="alternate" hreflang="en" href="/en/bikes/folding-bikes.html" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://xxx-lw.github.io/de/bikes/hybrid-bikes.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://xxx-lw.github.io/en/bikes/hybrid-bikes.html" />
     </url>
 
     <url>
+        <loc>https://omckenzie-lw.github.io/bikes/folding-bikes</loc>
         <lastmod>2024-05-04</lastmod>
-        <loc>bikes/folding-bikes</loc>
-        <xhtml:link rel="alternate" hreflang="de" href="/de/bikes/road-bikes.html" />
-        <xhtml:link rel="alternate" hreflang="en" href="/en/bikes/road-bikes.html" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://xxx-lw.github.io/de/bikes/folding-bikes.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://xxx-lw.github.io/en/bikes/folding-bikes.html" />
     </url>
 
 </urlset>
