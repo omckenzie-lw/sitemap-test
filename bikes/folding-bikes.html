@@ -7,89 +7,82 @@
     <link rel="alternate" hreflang="en" href="/bikes/folding-bikes.html" />
     <link rel="alternate" hreflang="de" href="/de/bikes/folding-bikes.html" />
     <meta name="lastmod" content="2023-11-03">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .bike-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .bike-item {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+        }
+
+        .bike-item h3 {
+            margin-top: 0;
+        }
+
+        .bike-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
-<body class="bg-gray-100">
-    <header class="bg-blue-600 text-white p-6 shadow-md">
-        <div class="container mx-auto">
-            <h1 class="text-3xl font-bold">Folding Bikes</h1>
-            <p class="mt-2">Compact and portable bikes for urban commuters</p>
-        </div>
+<body>
+    <header>
+        <h1>Folding Bikes</h1>
+        <p>Explore our selection of premium folding bikes - perfect for commuters and travelers.</p>
+        <a href="../index.html">← Back to Home</a>
     </header>
 
-    <main class="container mx-auto py-8 px-4">
-        <p class="text-lg mb-8">Our folding bikes are designed for convenience and portability, perfect for commuters
-            and travelers.</p>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Bike 1 -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <div class="bg-gray-200 h-48 flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-gray-400" fill="none"
-                        viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-                            d="M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0M7 11h10l-2-6H9L7 11zm4-6v6m4-6v6" />
-                    </svg>
-                </div>
-                <div class="p-4">
-                    <h2 class="text-xl font-semibold text-gray-800">Urban Compact</h2>
-                    <p class="text-gray-600 mt-2">Lightweight aluminum frame, folds in 15 seconds, perfect for city
-                        commuting.</p>
-                    <div class="mt-4 flex justify-between items-center">
-                        <span class="text-blue-600 font-bold">$699</span>
-                        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">View Details</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bike 2 -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <div class="bg-gray-200 h-48 flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-gray-400" fill="none"
-                        viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-                            d="M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0M7 11h10l-2-6H9L7 11zm4-6v6m4-6v6" />
-                    </svg>
-                </div>
-                <div class="p-4">
-                    <h2 class="text-xl font-semibold text-gray-800">Metro Folder</h2>
-                    <p class="text-gray-600 mt-2">7-speed gearing, integrated lights, and mudguards for all-weather
-                        commuting.</p>
-                    <div class="mt-4 flex justify-between items-center">
-                        <span class="text-blue-600 font-bold">$849</span>
-                        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">View Details</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bike 3 -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <div class="bg-gray-200 h-48 flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-gray-400" fill="none"
-                        viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-                            d="M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0M7 11h10l-2-6H9L7 11zm4-6v6m4-6v6" />
-                    </svg>
-                </div>
-                <div class="p-4">
-                    <h2 class="text-xl font-semibold text-gray-800">Travel Pro</h2>
-                    <p class="text-gray-600 mt-2">Electric-assist folding bike with 40-mile range, perfect for longer
-                        commutes.</p>
-                    <div class="mt-4 flex justify-between items-center">
-                        <span class="text-blue-600 font-bold">$1,299</span>
-                        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">View Details</button>
-                    </div>
-                </div>
-            </div>
+    <div class="bike-list">
+        <div class="bike-item">
+            <h3>City Folder X1</h3>
+            <img src="https://placehold.co/200x200?text=bike-1" alt="City Folder X1">
+            <p>Lightweight aluminum frame that folds in seconds. Perfect for urban commuting.</p>
+            <p><strong>Weight:</strong> 9.5kg</p>
+            <p><strong>Price:</strong> $699</p>
+            <a href="folding-bikes/city-folder-x1.html">View Details</a>
         </div>
-    </main>
 
-    <footer class="bg-gray-800 text-white py-6 mt-12">
-        <div class="container mx-auto px-4">
-            <p>&copy; 2023 Bike Shop. All rights reserved.</p>
+        <div class="bike-item">
+            <h3>Traveler Pro</h3>
+            <img src="https://placehold.co/200x200?text=bike-2" alt="Traveler Pro">
+            <p>Our premium folding bike with 8-speed gearing and integrated lights.</p>
+            <p><strong>Weight:</strong> 11kg</p>
+            <p><strong>Price:</strong> $899</p>
+            <a href="folding-bikes/traveler-pro.html">View Details</a>
         </div>
-    </footer>
+
+        <div class="bike-item">
+            <h3>Compact Mini</h3>
+            <img src="https://placehold.co/200x200?text=bike-3" alt="Compact Mini">
+            <p>Ultra-compact folding design with 16" wheels. Fits in any trunk or closet.</p>
+            <p><strong>Weight:</strong> 8kg</p>
+            <p><strong>Price:</strong> $549</p>
+            <a href="folding-bikes/compact-mini.html">View Details</a>
+        </div>
+    </div>
 </body>
 
 </html>

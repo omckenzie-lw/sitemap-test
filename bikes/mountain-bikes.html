@@ -1,14 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Mountain Bikes</title>
     <link rel="alternate" hreflang="en" href="/bikes/mountain-bikes.html" />
     <link rel="alternate" hreflang="de" href="/de/bikes/mountain-bikes.html" />
     <meta name="lastmod" content="2023-11-03">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .bike-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .bike-item {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+        }
+
+        .bike-item h3 {
+            margin-top: 0;
+        }
+
+        .bike-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Mountain Bikes</h1>
-    <p>This is a test page for Mountain Bikes in English.</p>
+    <header>
+        <h1>Mountain Bikes</h1>
+        <p>Explore our rugged mountain bikes - engineered for trail performance and durability.</p>
+        <a href="../index.html">← Back to Home</a>
+    </header>
+
+    <div class="bike-list">
+        <div class="bike-item">
+            <h3>Trail Blazer Pro</h3>
+            <img src="https://placehold.co/200x200?text=mtb-1" alt="Trail Blazer Pro">
+            <p>Full-suspension trail bike with 140mm travel and advanced geometry.</p>
+            <p><strong>Weight:</strong> 13.8kg</p>
+            <p><strong>Price:</strong> $1,899</p>
+            <a href="mountain-bikes/trail-blazer-pro.html">View Details</a>
+        </div>
+
+        <div class="bike-item">
+            <h3>Hardtail XC</h3>
+            <img src="https://placehold.co/200x200?text=mtb-2" alt="Hardtail XC">
+            <p>Lightweight cross-country hardtail with carbon frame and race-ready components.</p>
+            <p><strong>Weight:</strong> 10.5kg</p>
+            <p><strong>Price:</strong> $1,499</p>
+            <a href="mountain-bikes/hardtail-xc.html">View Details</a>
+        </div>
+
+        <div class="bike-item">
+            <h3>Downhill Dominator</h3>
+            <img src="https://placehold.co/200x200?text=mtb-3" alt="Downhill Dominator">
+            <p>Aggressive downhill bike with 200mm travel and burly components for big hits.</p>
+            <p><strong>Weight:</strong> 16.2kg</p>
+            <p><strong>Price:</strong> $2,499</p>
+            <a href="mountain-bikes/downhill-dominator.html">View Details</a>
+        </div>
+    </div>
 </body>
+
 </html>
