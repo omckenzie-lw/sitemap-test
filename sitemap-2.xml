@@ -3,14 +3,21 @@
                         http://www.google.com/schemas/sitemap-video/1.1 http://www.google.com/schemas/sitemap-video/1.1/sitemap-video.xsd">
 
     <url>
-        <loc>https://omckenzie-lw.github.io/bikes/hybrid-bikes</loc>
+        <loc>https://omckenzie-lw.github.io/sitemap-test/bikes/hybrid-bikes.html</loc>
         <lastmod>2024-05-02</lastmod>
         <xhtml:link rel="alternate" hreflang="de" href="https://omckenzie-lw.github.io/de/bikes/hybrid-bikes.html" />
         <xhtml:link rel="alternate" hreflang="en" href="https://omckenzie-lw.github.io/en/bikes/hybrid-bikes.html" />
     </url>
 
     <url>
-        <loc>https://omckenzie-lw.github.io/bikes/folding-bikes</loc>
+        <loc>https://omckenzie-lw.github.io/bikes/sitemap-test/folding-bikes.html</loc> <!-- 404 test -->
+        <lastmod>2024-05-04</lastmod>
+        <xhtml:link rel="alternate" hreflang="de" href="https://omckenzie-lw.github.io/de/bikes/folding-bikes.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://omckenzie-lw.github.io/en/bikes/folding-bikes.html" />
+    </url>
+
+    <url>
+        <loc>https://en.wikipedia.org/wiki/Bicycle</loc> <!-- Start link restrict test -->
         <lastmod>2024-05-04</lastmod>
         <xhtml:link rel="alternate" hreflang="de" href="https://omckenzie-lw.github.io/de/bikes/folding-bikes.html" />
         <xhtml:link rel="alternate" hreflang="en" href="https://omckenzie-lw.github.io/en/bikes/folding-bikes.html" />

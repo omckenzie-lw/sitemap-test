@@ -3,8 +3,15 @@
                         http://www.google.com/schemas/sitemap-video/1.1 http://www.google.com/schemas/sitemap-video/1.1/sitemap-video.xsd">
 
     <url>
-        <loc>https://omckenzie-lw.github.io/bikes/mountain-bikes</loc>
+        <loc>https://omckenzie-lw.github.io/sitemap-test/bikes/mountain-bikes.html</loc>
         <lastmod>2023-05-02</lastmod>
+        <xhtml:link rel="alternate" hreflang="de" href="https://omckenzie-lw.github.io/de/bikes/mountain-bikes.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://omckenzie-lw.github.io/en/bikes/mountain-bikes.html" />
+    </url>
+
+    <url>
+        <loc>https://omckenzie-lw.github.io/sitemap-test/bikes/404-bikes.html</loc>
+        <lastmod>2020-05-02</lastmod>
         <xhtml:link rel="alternate" hreflang="de" href="https://omckenzie-lw.github.io/de/bikes/mountain-bikes.html" />
         <xhtml:link rel="alternate" hreflang="en" href="https://omckenzie-lw.github.io/en/bikes/mountain-bikes.html" />
     </url>
