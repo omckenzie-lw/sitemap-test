@@ -9,11 +9,4 @@
         <xhtml:link rel="alternate" hreflang="en" href="/en/bikes/folding-bikes.html" />
     </url>
 
-    <url>
-        <lastmod>2023-05-02</lastmod>
-        <loc>bikes/road-bikes</loc>
-        <xhtml:link rel="alternate" hreflang="de" href="/de/bikes/road-bikes.html" />
-        <xhtml:link rel="alternate" hreflang="en" href="/en/bikes/road-bikes.html" />
-    </url>
-
 </urlset>
