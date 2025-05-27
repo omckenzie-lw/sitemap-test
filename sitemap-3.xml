@@ -22,4 +22,18 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://omckenzie-lw.github.io/en/bikes/cruiser-bikes.html" />
     </url>
 
+    <url>
+        <loc>https://omckenzie-lw.github.io/sitemap-test/bikes/road-bikes.html</loc>
+        <lastmod>2025-05-06</lastmod>
+        <xhtml:link rel="alternate" hreflang="de" href="https://omckenzie-lw.github.io/de/bikes/road-bikes.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://omckenzie-lw.github.io/en/bikes/road-bikes.html" />
+    </url>
+
+    <url>
+        <loc>https://omckenzie-lw.github.io/sitemap-test/bikes/touring-bikes.html</loc>
+        <lastmod>2025-05-06</lastmod>
+        <xhtml:link rel="alternate" hreflang="de" href="https://omckenzie-lw.github.io/de/bikes/touring-bikes.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://omckenzie-lw.github.io/en/bikes/touring-bikes.html" />
+    </url>
+
 </urlset>

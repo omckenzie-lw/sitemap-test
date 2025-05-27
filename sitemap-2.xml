@@ -22,4 +22,11 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://omckenzie-lw.github.io/en/bikes/folding-bikes.html" />
     </url>
 
+    <url>
+        <loc>https://omckenzie-lw.github.io/sitemap-test/bikes/kids-bikes.html</loc>
+        <lastmod>2023-05-04T12:00:00+00:00</lastmod>
+        <xhtml:link rel="alternate" hreflang="de" href="https://omckenzie-lw.github.io/de/bikes/kids-bikes.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://omckenzie-lw.github.io/en/bikes/kids-bikes.html" />
+    </url>
+
 </urlset>
