@@ -23,6 +23,27 @@
     </url>
 
     <url>
+        <loc>https://en.wikipedia.org/wiki/Cat</loc> <!-- Start link restrict test -->
+        <lastmod>2024-05-04</lastmod>
+        <xhtml:link rel="alternate" hreflang="de" href="https://omckenzie-lw.github.io/de/bikes/folding-bikes.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://omckenzie-lw.github.io/en/bikes/folding-bikes.html" />
+    </url>
+
+    <url>
+        <loc>https://en.wikipedia.org/wiki/Rat</loc> <!-- Start link restrict test -->
+        <lastmod>2024-05-04</lastmod>
+        <xhtml:link rel="alternate" hreflang="de" href="https://omckenzie-lw.github.io/de/bikes/folding-bikes.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://omckenzie-lw.github.io/en/bikes/folding-bikes.html" />
+    </url>
+
+    <url>
+        <loc>https://en.wikipedia.org/wiki/Bat</loc> <!-- Start link restrict test -->
+        <lastmod>2024-05-04</lastmod>
+        <xhtml:link rel="alternate" hreflang="de" href="https://omckenzie-lw.github.io/de/bikes/folding-bikes.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://omckenzie-lw.github.io/en/bikes/folding-bikes.html" />
+    </url>
+
+    <url>
         <loc>https://omckenzie-lw.github.io/sitemap-test/bikes/kids-bikes.html</loc>
         <lastmod>2023-05-04T12:00:00+00:00</lastmod>
         <xhtml:link rel="alternate" hreflang="de" href="https://omckenzie-lw.github.io/de/bikes/kids-bikes.html" />
