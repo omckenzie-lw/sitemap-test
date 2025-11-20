@@ -8,12 +8,15 @@ import time
 from typing import List, Dict, Optional
 
 # Global variable to control how many websites are fetched
-MAX_URLS_TO_FETCH = 20  # Change this value as needed
+MAX_URLS_TO_FETCH = 10  # Change this value as needed
+FETCH_DELAY = 0.75  # Delay in seconds between requests to avoid overwhelming the server
+
 
 class TouchGFXSitemapScraper:
     def __init__(self, sitemap_url: str = "https://support.touchgfx.com/sitemap.xml"):
         self.sitemap_url = sitemap_url
-        self.url_pattern = re.compile(r'https://support\.touchgfx\.com/4\.[12].*')
+        self.url_pattern = re.compile(
+            r'https://support\.touchgfx\.com/4\.[12].*')
         self.session = requests.Session()
         self.session.headers.update({
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
@@ -73,7 +76,8 @@ class TouchGFXSitemapScraper:
                 'X-Purpose': 'last-mod-check'
             }
             # Use HEAD request to get headers without downloading full content
-            response = self.session.head(url, timeout=10, allow_redirects=True, headers=headers)
+            response = self.session.head(
+                url, timeout=10, allow_redirects=True, headers=headers)
 
             # Try to get last-modified from headers
             last_modified = response.headers.get('Last-Modified')
@@ -117,7 +121,7 @@ class TouchGFXSitemapScraper:
             results.append(result)
 
             # Add small delay to be respectful to the server
-            time.sleep(0.5)
+            time.sleep(FETCH_DELAY)
 
         return results
 
@@ -168,11 +172,16 @@ class TouchGFXSitemapScraper:
 
 def main():
     scraper = TouchGFXSitemapScraper()
+    start_time = time.time()
     try:
         filename = scraper.run()
+        elapsed = time.time() - start_time
         print(f"Process completed successfully. Output file: {filename}")
+        print(f"Elapsed time: {elapsed:.2f} seconds")
     except Exception as e:
+        elapsed = time.time() - start_time
         print(f"Error during scraping: {e}")
+        print(f"Elapsed time: {elapsed:.2f} seconds")
 
 
 if __name__ == "__main__":
