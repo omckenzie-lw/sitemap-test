@@ -29,6 +29,7 @@ jobs:
           name: touchgfx-csv
           path: /tmp/touchgfx-*.csv
           if-no-files-found: error
+          retention-days: 3
 
 concurrency:
   group: touchgfx-scraper
