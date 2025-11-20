@@ -8,7 +8,7 @@ import time
 from typing import List, Dict, Optional
 
 # Global variable to control how many websites are fetched
-MAX_URLS_TO_FETCH = 9  # Change this value as needed
+MAX_URLS_TO_FETCH = 999  # Change this value as needed
 FETCH_DELAY = 0.75  # Delay in seconds between requests to avoid overwhelming the server
 
 
