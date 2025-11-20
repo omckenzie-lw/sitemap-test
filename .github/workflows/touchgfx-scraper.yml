@@ -29,3 +29,7 @@ jobs:
           name: touchgfx-csv
           path: ./touchgfx/touchgfx-*.csv
           if-no-files-found: error
+
+concurrency:
+  group: touchgfx-scraper
+  cancel-in-progress: false
