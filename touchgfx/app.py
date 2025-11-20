@@ -6,9 +6,10 @@ from datetime import datetime
 import re
 import time
 from typing import List, Dict, Optional
+from bs4 import BeautifulSoup
 
 # Global variable to control how many websites are fetched
-MAX_URLS_TO_FETCH = 999  # Change this value as needed
+MAX_URLS_TO_FETCH = 10  # Change this value as needed
 FETCH_DELAY = 0.75  # Delay in seconds between requests to avoid overwhelming the server
 
 
@@ -95,6 +96,23 @@ class TouchGFXSitemapScraper:
             print(f"Error fetching headers for {url}: {e}")
             return None
 
+    def get_last_modified_from_html(self, url):
+        try:
+            response = self.session.get(url, timeout=10)
+            soup = BeautifulSoup(response.text, 'html.parser')
+            # Check meta tags
+            meta = soup.find('meta', attrs={'name': 'last-modified'})
+            if meta and meta.get('content'):
+                return meta['content']
+            # Check for schema.org dateModified
+            schema = soup.find(attrs={'itemprop': 'dateModified'})
+            if schema and schema.get('content'):
+                return schema['content']
+            # Add more patterns as needed
+        except Exception as e:
+            print(f"Error fetching/parsing HTML for {url}: {e}")
+        return None
+
     def scrape_pages(self, urls_data: List[Dict[str, str]]) -> List[Dict[str, str]]:
         """Scrape pages to get last modified information"""
         # Limit the number of URLs processed based on the global variable
@@ -107,15 +125,18 @@ class TouchGFXSitemapScraper:
             print(f"Processing {i}/{len(urls_data)}: {url_data['url']}")
 
             # Get last modified from HTTP headers
-            http_last_modified = self.get_last_modified_from_page(
-                url_data['url'])
+            http_last_modified = self.get_last_modified_from_page(url_data['url'])
+
+            # Fallback: Try to get last modified from HTML if not found in headers
+            http_last_modified2 = self.get_last_modified_from_html(url_data['url'])
 
             result = {
                 'url': url_data['url'],
                 'changefreq': url_data['changefreq'],
                 'priority': url_data['priority'],
                 'sitemap_lastmod': url_data['lastmod'],
-                'http_last_modified': http_last_modified or ''
+                'http_last_modified': http_last_modified or '',
+                'http_last_modified2': http_last_modified2 or ''
             }
 
             results.append(result)
@@ -131,8 +152,7 @@ class TouchGFXSitemapScraper:
             epoch_timestamp = int(time.time())
             filename = f"/tmp/touchgfx-{epoch_timestamp}.csv" # f"touchgfx-{epoch_timestamp}.csv"
 
-        fieldnames = ['url', 'changefreq', 'priority',
-                      'sitemap_lastmod', 'http_last_modified']
+        fieldnames = ['url', 'changefreq', 'priority', 'sitemap_lastmod', 'http_last_modified', 'http_last_modified2']
 
         with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
