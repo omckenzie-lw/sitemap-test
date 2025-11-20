@@ -24,7 +24,7 @@ jobs:
         run: python ./sitemap-test/touchgfx/app.py
 
       - name: Upload CSV artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: touchgfx-csv
           path: ./sitemap-test/touchgfx/touchgfx-*.csv
