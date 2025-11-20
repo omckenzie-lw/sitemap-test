@@ -18,14 +18,14 @@ jobs:
           python-version: '3.10'
 
       - name: Install dependencies
-        run: pip install -r ./sitemap-test/touchgfx/requirements.txt
+        run: pip install -r ./touchgfx/requirements.txt
 
       - name: Run TouchGFX Sitemap Scraper
-        run: python ./sitemap-test/touchgfx/app.py
+        run: python ./touchgfx/app.py
 
       - name: Upload CSV artifact
         uses: actions/upload-artifact@v4
         with:
           name: touchgfx-csv
-          path: ./sitemap-test/touchgfx/touchgfx-*.csv
+          path: ./touchgfx/touchgfx-*.csv
           if-no-files-found: error
