@@ -2,7 +2,7 @@ name: TouchGFX Sitemap Scraper
 
 on:
   schedule:
-    - cron: '0 */8 * * *'  # Every 8 hours
+    - cron: '5 * * * *' # '0 */8 * * *'  # Every 8 hours
   workflow_dispatch:
 
 jobs:
