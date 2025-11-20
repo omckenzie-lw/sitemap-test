@@ -27,7 +27,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: touchgfx-csv
-          path: ./touchgfx/touchgfx-*.csv
+          path: /tmp/touchgfx-*.csv
           if-no-files-found: error
 
 concurrency:

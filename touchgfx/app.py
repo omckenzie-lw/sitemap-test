@@ -129,7 +129,7 @@ class TouchGFXSitemapScraper:
         """Save data to CSV file"""
         if filename is None:
             epoch_timestamp = int(time.time())
-            filename = f"touchgfx-{epoch_timestamp}.csv"
+            filename = f"/tmp/touchgfx-{epoch_timestamp}.csv" # f"touchgfx-{epoch_timestamp}.csv"
 
         fieldnames = ['url', 'changefreq', 'priority',
                       'sitemap_lastmod', 'http_last_modified']
